@@ -86,7 +86,7 @@ The project follows the **full Data Science Life Cycle**:
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/your-username/heart-attack-prediction.git
+   git clone https://github.com/malakkhaled123/Heart-Attack-Prediction
    cd heart-attack-prediction
    ```
 2. Install dependencies
