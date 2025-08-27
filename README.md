@@ -69,14 +69,25 @@ The project follows the **full Data Science Life Cycle**:
 
 ---
 
+**Comparing LR with SVM**
+*	Applied Support Vector Machine (SVM) with three kernels: linear, polynomial, and RBF.
+	* Results:
+      * Linear kernel: Accuracy = ~0.81
+      * Polynomial kernel: Accuracy = ~0.70
+      * RBF kernel: Accuracy = ~0.76
+*	The linear kernel performed best.
+*	Compared Logistic Regression (83%) vs. Best SVM (linear kernel, ~81%).
+*	Logistic Regression slightly outperformed SVM, though both showed comparable performance.
+
+---
+
 **Conclusions**
 
-* The Logistic Regression model achieved good performance (83% accuracy).
-* It performs better at predicting Positive (at risk) patients, which is critical in a medical setting since false negatives (missed risks) can be dangerous.
-* There is still room for improvement:
-
-  * Compare with other ML models (Random Forest, SVM, XGBoost, etc.)
-  * Perform hyperparameter tuning to optimize model performance
+*	The Logistic Regression model achieved good performance (83% accuracy).
+*	The Logistic Regression model performs better at predicting Positive (at risk) patients, which is critical in a medical setting since false negatives (missed risks) can be dangerous.
+*	There is still room for improvement:
+    * Using k-fold cross-validation on the training set to choose the best SVM kernel, instead of picking the kernel based only on test accuracy.
+    * Perform hyperparameter tuning to optimize model performance
 
 ---
 
